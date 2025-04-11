@@ -1,0 +1,17 @@
+{
+	"manifest_version":2,
+	"name":"Duck Circle Remover",
+	"version": "1.0",
+	"description": "Removes that irritating grey circle around the website icons when searching using the DuckDuckGo browser.",
+	"icons":{
+		"48":"icons/DCR_48.png"
+		},
+	"content_scripts": [
+	{
+		"matches": ["*://duckduckgo.com/*"],
+		"js": ["DCR.js"],
+		"css": ["DCR.css"]
+	}
+	]
+	
+}
